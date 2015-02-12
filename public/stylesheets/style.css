@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+#main {
+  background: #f7f7f7;
+  width: 100%;
+}
+
+#thumbnailpane {
+  width: 29%;
+  height: 600px;
+  background: #cccccc;
+  display: inline-block;
+  overflow-y: scroll;
+}
+
+#thumbnailpane li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: -4px;
+  margin-bottom: -4px;
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+#thumbnailpane li:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.thumbnaillist {
+  min-height: 500px;
+  min-width: 100px;
+}
+
+.thumbnailview {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#tilepane {
+  vertical-align: top;
+  width: 70%;
+  background: #eeeeee;
+  display: inline-block;
+}
+
+#tilepane li {
+  list-style-type: none;
+  display: inline-block;
+  margin-top: -6px;
+  margin-left: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+.tilelist {
+  min-height: 500px;
+  min-width: 100px;
+}
+
+.tileview {
+  height: 250px;
+  width: 250px;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.portrait {
+  width: 100%;
+}
+
+.landscape {
+  height: 100%;
+}
+
+#thumbnailpane li .destroy {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 40px;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  margin: auto 0;
+  font-size: 11px;
+  color: #a88a8a;
+  border: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#thumbnailpane li .destroy:hover {
+  text-shadow: 0 0 1px #000,
+         0 0 10px rgba(199, 107, 107, 0.8);
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+#thumbnailpane li .destroy:after {
+  content: '✖';
+}
+
+#thumbnailpane li:hover .destroy {
+  display: block;
+}
+
+#tilepane li .destroy {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 40%;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  margin: auto 0;
+  font-size: 22px;
+  color: #a88a8a;
+  border: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#tilepane li .destroy:hover {
+  text-shadow: 0 0 1px #000,
+         0 0 10px rgba(199, 107, 107, 0.8);
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+#tilepane li .destroy:after {
+  content: '✖';
+}
+
+#tilepane li:hover .destroy {
+  display: block;
+}
